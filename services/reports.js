@@ -192,7 +192,8 @@ const getReport = (url) => {
                     })
 
                     json.phone = json.phone || `+33${getRandom(6)}`
-                    
+                    json.description = json.description || `Perdue à goutroux ( rue de leernes) Ne possède plus de patte arrière droite`
+
                     const Image = $('.container img').attr("src");
 
                     await insertCategory(json.category).then(res => {
